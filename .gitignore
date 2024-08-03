@@ -1,3 +1,4 @@
-build/*
-
-sdkconfig*
+#Firmware
+Firmware/build/
+Firmware/sdkconfig
+Firmware/sdkconfig.old*
