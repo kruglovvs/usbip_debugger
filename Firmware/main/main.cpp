@@ -59,10 +59,11 @@ void init_usbip()
 
 extern "C" void app_main(void)
 {
-    esp_log_level_set("*", ESP_LOG_ERROR);
-    esp_log_level_set("*", ESP_LOG_NONE);
+    //esp_log_level_set("*", ESP_LOG_ERROR);
+    //esp_log_level_set("*", ESP_LOG_NONE);
     // esp_log_level_set("USB_EPx_RESP", ESP_LOG_NONE);
     // esp_log_level_set("example", ESP_LOG_INFO);
+    
     init_usbip();
 
     start_server();

@@ -1,4 +1,10 @@
-#Firmware
+#Firmware .gitignore
 Firmware/build/
 Firmware/sdkconfig
 Firmware/sdkconfig.old*
+
+#Hardware .gitignore
+Hardware/Project/History/
+Hardware/Library/History/
+Hardware/Library/__Previews/
+*.PrjPcbStructure
