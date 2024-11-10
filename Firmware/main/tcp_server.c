@@ -183,28 +183,16 @@ void esp_event_handler(void *event_handler_arg, esp_event_base_t event_base, int
     switch (event_id)
     {
     case WIFI_EVENT_STA_START:
-    {
         esp_wifi_connect();
         break;
-    }
-    case IP_EVENT_GOT_IP6:
-    {
-        char myIP[200]; 
-        memset(myIP, 0, 200);
-        ip_event_got_ip6_t *event = (ip_event_got_ip6_t *)event_data;
-        sprintf(myIP, IPSTR, IPV62STR(&event->ip6_info.ip));
-        ESP_LOGE(TAG, "got ipv6: %s", myIP);
 
-        xEventGroupSetBits(wifi_event_grp, WIFI_CONNECTED_BIT);
-        break;
-    }
     case IP_EVENT_STA_GOT_IP:
     {
-        char myIP[200];
+        char myIP[20];
         memset(myIP, 0, 20);
         ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
         sprintf(myIP, IPSTR, IP2STR(&event->ip_info.ip));
-        ESP_LOGE(TAG, "got ipv4: %s", myIP);
+        ESP_LOGE(TAG, "got ip: %s", myIP);
 
         xEventGroupSetBits(wifi_event_grp, WIFI_CONNECTED_BIT);
         break;
@@ -247,12 +235,6 @@ void wifi_init_sta(char *ssid, char *pass)
 
 esp_err_t wifi_init()
 {
-//     ESP_ERROR_CHECK(nvs_flash_init());
-//     ESP_ERROR_CHECK(esp_netif_init());
-//     ESP_ERROR_CHECK(esp_event_loop_create_default());
-
-//     ESP_ERROR_CHECK(example_connect());
-
     wifi_event_grp = xEventGroupCreate();
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
@@ -272,8 +254,8 @@ esp_err_t wifi_init()
     // ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_NULL) );
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_APSTA));
     ESP_ERROR_CHECK(esp_wifi_start());
-    wifi_init_sta("valenok", "75395148");
-    // wifi_init_sta("Guest_WiFi", "NeRm25:)KmwQ");
+  wifi_init_sta("valenok", "75395148");
+//    wifi_init_sta("Guest_WiFi", "NeRm25:)KmwQ");
 
     ESP_LOGI(TAG, "wifi_init finished.");
 
