@@ -169,6 +169,10 @@ DItemRevisionGUID=
 DocumentPath=Документация\ИУ4.11.03.03.21.73.16.002.pdf
 DItemRevisionGUID=
 
+[GeneratedDocument17]
+DocumentPath=Документация\ИУ4.11.03.03.21.73.16.002 СБ.pdf
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Папка для сохранения графической документации
 Value=Документация
