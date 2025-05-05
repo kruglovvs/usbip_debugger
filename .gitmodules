@@ -1,0 +1,3 @@
+[submodule "firmware/wireless-esp8266-dap"]
+	path = firmware/wireless-esp8266-dap
+	url = https://github.com/windowsair/wireless-esp8266-dap.git
