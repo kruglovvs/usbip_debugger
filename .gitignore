@@ -22,3 +22,4 @@ hardware/Model/*.dpl
 #filetypes
 *.log
 *.txt
+*.tmp
