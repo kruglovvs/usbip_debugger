@@ -1,19 +1,24 @@
-#Firmware .gitignore
-Firmware/build/
-Firmware/sdkconfig
-Firmware/sdkconfig.old*
+#firmware .gitignore
+firmware/build/
+firmware/sdkconfig
+firmware/sdkconfig.old*
 
-#Hardware .gitignore
-Hardware/Project/Project.PrjPcbStructure
-Hardware/Project/boas.xml
-Hardware/Project/BOAS_PCB.outjob
-Hardware/Project/History/
-Hardware/Project/3D model/
-Hardware/Project/__Previews/
-Hardware/Project/Project Logs for Project/
-Hardware/Project/Project Outputs for Project/
-Hardware/Project/Документация/
+#hardware .gitignore
+hardware/project/Project.PrjPcbStructure
+hardware/project/boas.xml
+hardware/project/BOAS_PCB.outjob
+hardware/project/History/
+hardware/project/3D model/
+hardware/project/__Previews/
+hardware/project/Project Logs for Project/
+hardware/project/Project Outputs for Project/
+hardware/project/Документация/
 
-Hardware/Library/History/
-Hardware/Library/__Previews/
-Hardware/Library/Project Outputs for Integrated_Library/
+hardware/library/History/
+hardware/library/__Previews/
+hardware/library/Project Outputs for Integrated_Library/
+hardware/Model/*.dpl
+
+#filetypes
+*.log
+*.txt
