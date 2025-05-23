@@ -1,3 +1,6 @@
 [submodule "firmware/wireless-esp8266-dap"]
 	path = firmware/wireless-esp8266-dap
 	url = https://github.com/windowsair/wireless-esp8266-dap.git
+[submodule "firmware/wireless-esp32-tools"]
+	path = firmware/wireless-esp32-tools
+	url = https://github.com/kerms/wireless-esp32-tools.git
