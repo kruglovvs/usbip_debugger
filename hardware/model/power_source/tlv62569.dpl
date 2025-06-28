@@ -1,0 +1,28 @@
+<Qucs Schematic 25.1.1>
+<Properties>
+  <View=0,-120,1592,766,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=tlv62569.dat>
+  <DataDisplay=tlv62569.sch>
+  <OpenDisplay=0>
+  <Script=tlv62569.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Название>
+  <FrameText1=Чертил:>
+  <FrameText2=Дата:>
+  <FrameText3=Версия:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 400 511 467 421 3 #c0c0c0 1 00 1 0 0.0001 0.001 1 0.177896 0.05 0.631159 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/tran.v(out)" #0000ff 1 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
